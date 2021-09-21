@@ -1,0 +1,71 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px
+}
+
+.header__logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+  max-width: 106px;
+}
+
+.header__logo-primary {
+  color: var(--color-primary);
+}
+
+.header__search-form {
+  flex-grow: 1;
+  height: 70px;
+  padding-left: 73px;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  background-color: var(--color-second);
+  border-radius: 6px;
+  transition: box-shadow .2s;
+}
+
+.header__search-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header__burger-btn {
+  width: 106px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: box-shadow .2s;
+}
+
+.header__burger-svg {
+  stroke: var(--color-text);
+  transition: stroke .2s;
+}
+
+.header__burger-btn:hover .header__burger-svg,
+.header__burger-btn:active .header__burger-svg {
+  stroke: var(--color-primary);
+}
+
+.header__burger-btn:focus,
+.header__burger-btn:active {
+  box-shadow: 0 0 3px 2px var(--color-primary);
+}
+
+/* Не работает, походу потому, что событие ловит дочерний, а стили меняются у родительского. На стаке решения не нашёл, сделал через JS*/
+
+/* .header__search-input:focus ~ .header__search-form,
+.header__search-input:active ~ .header__search-form {
+  box-shadow: 0 0 3px 2px var(--color-primary);
+} */
