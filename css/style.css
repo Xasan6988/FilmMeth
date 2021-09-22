@@ -3,14 +3,5 @@
 @import "variables.css";
 @import "basic.css";
 @import "header.css";
+@import "film-week.css";
 
-
-
-
-h1 {
-  font-family: Raleway, sans-serif;
-}
-
-h2 {
-  font-family: Inter, sans-serif;
-}
