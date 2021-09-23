@@ -37,3 +37,9 @@ h1, h2, p {
 button {
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+}
