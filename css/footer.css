@@ -85,6 +85,7 @@
   font-size: 16px;
   line-height: 140%;
   opacity: 0.6;
+  max-width: 310px;
 }
 
 @media (max-width: 1000px) {

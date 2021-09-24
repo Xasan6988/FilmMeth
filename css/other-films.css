@@ -38,6 +38,17 @@
 .other-films__img {
   border-radius: 10px;
   box-shadow: 0 0 10px var(--color-primary);
+  transition: box-shadow 0.2s;
+}
+.other-films__link {
+  outline: none;
+}
+.other-films__link:hover .other-films__img {
+  box-shadow: 0 0 10px 10px var(--color-primary);
+}
+.other-films__link:focus .other-films__img,
+.other-films__link:active .other-films__img {
+  box-shadow: 0 0 20px 10px var(--color-primary);
 }
 
 .other-films__btn {
@@ -71,7 +82,7 @@
   border: 1.7px solid var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-second);
-  box-shadow: 0 0 3px 1px var(--color-primary);
+  box-shadow: 0 0 10px 2px var(--color-primary);
 }
 
 @media (max-width: 1366px) {
